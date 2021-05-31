@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我是一个H5页面</title>
+</head>
+<style>
+    .test-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .clickMe {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: red;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="test-wrap">
+        <div onClick="yuchen()" class="clickMe">
+            <sapn>点我</sapn>
+        </div>
+        <div onClick="_login('雨辰')" class="clickMe">
+            <sapn>这个方法是引用进来的</sapn>
+        </div>
+
+        <div onClick="alertMessage('哈哈哈')" class="clickMe">
+            <sapn>点击：哈~</sapn>
+        </div>
+
+    </div>
+    <script src="./test.js"></script>
+    <script>
+        function yuchen() {
+            alert('我是点击')
+        }
+    </script>
+</body>
+
+</html>
